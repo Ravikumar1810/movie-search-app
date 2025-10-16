@@ -7,7 +7,7 @@ function App() {
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState('');
 
-  const API_KEY = "29c97c2e";
+  const API_KEY = import.meta.env.VITE_MOVIE_API_KEY;
 
   const handleSearch = async () => {
     if (!query.trim) {
